@@ -1,0 +1,96 @@
+using gpu:0 to train the model
+2024-08-07 16:52:33,232 - INFO: Namespace(dataset='synthetic', P=0.6, experiment_name='lp', num_nodes=23035, input_dim=64, testlength=5, num_classes=-1, nc_layers=2, hid_dim=32, weight1=1.0, weight2=1.0, causal_ratio=0.2, spatial_drop=0.0, temporal_drop=0.0, structural_head_config='4', structural_layer_config='32', temporal_head_config='4', temporal_layer_config='32', residual=True, norm=1, use_RTE=1, fmask=1, lin_bias=0, skip=0, max_epoch=1000, min_epoch=400, warm_epoch=0, lr=0.01, weight_decay=0.005, dropout=0.0, seed=42, patience=50, device_id='0', intervention_times=10, log_dir='logs/new/', log_interval=20, sampling_times=1, split=0, shift=0, use_cfg=1, device=device(type='cuda', index=0), vallength=1, length=16)
+total length: 16, test length: 5
+  0%|                                                  | 0/1000 [00:00<?, ?it/s]Epoch:1, Loss: 11.5184, Time: 1.893
+(IID) Current: Epoch:1, Train AUC :0.8532, Val AUC_s: 0.8434, Test AUC_s: 0.7977
+(IID) Best_Test: Epoch:1, Train AUC:0.8532, Val AUC: 0.8434, Test AUC: 0.7977
+(OOD) Current_Test: Epoch:1, Train AUC:0.8532, Val AUC: 0.8434, Test AUC: 0.7977
+  2%|▊                                        | 19/1000 [00:16<14:28,  1.13it/s]Epoch:20, Loss: 2.0377, Time: 0.879
+(IID) Current: Epoch:20, Train AUC :0.9401, Val AUC_s: 0.9326, Test AUC_s: 0.7795
+(IID) Best_Test: Epoch:20, Train AUC:0.9401, Val AUC: 0.9326, Test AUC: 0.7795
+(OOD) Current_Test: Epoch:20, Train AUC:0.9401, Val AUC: 0.9326, Test AUC: 0.7795
+  4%|█▌                                       | 39/1000 [00:32<12:59,  1.23it/s]Epoch:40, Loss: 1.8712, Time: 0.759
+(IID) Current: Epoch:40, Train AUC :0.9601, Val AUC_s: 0.9520, Test AUC_s: 0.7888
+(IID) Best_Test: Epoch:40, Train AUC:0.9601, Val AUC: 0.9520, Test AUC: 0.7888
+(OOD) Current_Test: Epoch:40, Train AUC:0.9601, Val AUC: 0.9520, Test AUC: 0.7888
+  6%|██▍                                      | 59/1000 [00:49<13:49,  1.13it/s]Epoch:60, Loss: 1.8189, Time: 0.855
+(IID) Current: Epoch:60, Train AUC :0.9683, Val AUC_s: 0.9597, Test AUC_s: 0.8005
+(IID) Best_Test: Epoch:60, Train AUC:0.9683, Val AUC: 0.9597, Test AUC: 0.8005
+(OOD) Current_Test: Epoch:60, Train AUC:0.9683, Val AUC: 0.9597, Test AUC: 0.8005
+  8%|███▏                                     | 79/1000 [01:06<13:00,  1.18it/s]Epoch:80, Loss: 1.7922, Time: 0.841
+(IID) Current: Epoch:80, Train AUC :0.9727, Val AUC_s: 0.9636, Test AUC_s: 0.8111
+(IID) Best_Test: Epoch:80, Train AUC:0.9727, Val AUC: 0.9636, Test AUC: 0.8111
+(OOD) Current_Test: Epoch:80, Train AUC:0.9727, Val AUC: 0.9636, Test AUC: 0.8111
+ 10%|████                                     | 99/1000 [01:24<12:43,  1.18it/s]Epoch:100, Loss: 1.7721, Time: 0.902
+(IID) Current: Epoch:100, Train AUC :0.9758, Val AUC_s: 0.9665, Test AUC_s: 0.8242
+(IID) Best_Test: Epoch:100, Train AUC:0.9758, Val AUC: 0.9665, Test AUC: 0.8242
+(OOD) Current_Test: Epoch:100, Train AUC:0.9758, Val AUC: 0.9665, Test AUC: 0.8242
+ 12%|████▊                                   | 119/1000 [01:41<13:09,  1.12it/s]Epoch:120, Loss: 1.7587, Time: 0.864
+(IID) Current: Epoch:120, Train AUC :0.9780, Val AUC_s: 0.9690, Test AUC_s: 0.8367
+(IID) Best_Test: Epoch:120, Train AUC:0.9780, Val AUC: 0.9690, Test AUC: 0.8367
+(OOD) Current_Test: Epoch:120, Train AUC:0.9780, Val AUC: 0.9690, Test AUC: 0.8367
+ 14%|█████▌                                  | 139/1000 [01:58<12:14,  1.17it/s]Epoch:140, Loss: 1.7472, Time: 0.833
+(IID) Current: Epoch:140, Train AUC :0.9797, Val AUC_s: 0.9708, Test AUC_s: 0.8473
+(IID) Best_Test: Epoch:140, Train AUC:0.9797, Val AUC: 0.9708, Test AUC: 0.8473
+(OOD) Current_Test: Epoch:140, Train AUC:0.9797, Val AUC: 0.9708, Test AUC: 0.8473
+ 16%|██████▎                                 | 159/1000 [02:15<11:38,  1.20it/s]Epoch:160, Loss: 1.7390, Time: 0.738
+(IID) Current: Epoch:160, Train AUC :0.9811, Val AUC_s: 0.9724, Test AUC_s: 0.8549
+(IID) Best_Test: Epoch:160, Train AUC:0.9811, Val AUC: 0.9724, Test AUC: 0.8549
+(OOD) Current_Test: Epoch:160, Train AUC:0.9811, Val AUC: 0.9724, Test AUC: 0.8549
+ 18%|███████▏                                | 179/1000 [02:30<10:36,  1.29it/s]Epoch:180, Loss: 1.7323, Time: 0.811
+(IID) Current: Epoch:180, Train AUC :0.9823, Val AUC_s: 0.9737, Test AUC_s: 0.8617
+(IID) Best_Test: Epoch:180, Train AUC:0.9823, Val AUC: 0.9737, Test AUC: 0.8617
+(OOD) Current_Test: Epoch:180, Train AUC:0.9823, Val AUC: 0.9737, Test AUC: 0.8617
+ 20%|███████▉                                | 199/1000 [02:46<10:54,  1.22it/s]Epoch:200, Loss: 1.7242, Time: 0.805
+(IID) Current: Epoch:200, Train AUC :0.9831, Val AUC_s: 0.9748, Test AUC_s: 0.8664
+(IID) Best_Test: Epoch:200, Train AUC:0.9831, Val AUC: 0.9748, Test AUC: 0.8664
+(OOD) Current_Test: Epoch:200, Train AUC:0.9831, Val AUC: 0.9748, Test AUC: 0.8664
+ 22%|████████▊                               | 219/1000 [03:02<10:17,  1.27it/s]Epoch:220, Loss: 1.7198, Time: 0.522
+(IID) Current: Epoch:220, Train AUC :0.9836, Val AUC_s: 0.9755, Test AUC_s: 0.8699
+(IID) Best_Test: Epoch:219, Train AUC:0.9836, Val AUC: 0.9755, Test AUC: 0.8698
+(OOD) Current_Test: Epoch:219, Train AUC:0.9836, Val AUC: 0.9755, Test AUC: 0.8698
+ 24%|█████████▌                              | 239/1000 [03:18<10:55,  1.16it/s]Epoch:240, Loss: 1.7176, Time: 0.861
+(IID) Current: Epoch:240, Train AUC :0.9840, Val AUC_s: 0.9761, Test AUC_s: 0.8727
+(IID) Best_Test: Epoch:240, Train AUC:0.9840, Val AUC: 0.9761, Test AUC: 0.8727
+(OOD) Current_Test: Epoch:240, Train AUC:0.9840, Val AUC: 0.9761, Test AUC: 0.8727
+ 26%|██████████▎                             | 259/1000 [03:31<08:18,  1.49it/s]Epoch:260, Loss: 1.7110, Time: 0.503
+(IID) Current: Epoch:260, Train AUC :0.9843, Val AUC_s: 0.9763, Test AUC_s: 0.8742
+(IID) Best_Test: Epoch:258, Train AUC:0.9843, Val AUC: 0.9763, Test AUC: 0.8743
+(OOD) Current_Test: Epoch:258, Train AUC:0.9843, Val AUC: 0.9763, Test AUC: 0.8743
+ 28%|███████████▏                            | 279/1000 [03:45<08:49,  1.36it/s]Epoch:280, Loss: 1.7112, Time: 0.541
+(IID) Current: Epoch:280, Train AUC :0.9847, Val AUC_s: 0.9765, Test AUC_s: 0.8759
+(IID) Best_Test: Epoch:279, Train AUC:0.9847, Val AUC: 0.9765, Test AUC: 0.8758
+(OOD) Current_Test: Epoch:279, Train AUC:0.9847, Val AUC: 0.9765, Test AUC: 0.8758
+ 30%|███████████▉                            | 299/1000 [03:58<08:11,  1.43it/s]Epoch:300, Loss: 1.7061, Time: 0.532
+(IID) Current: Epoch:300, Train AUC :0.9849, Val AUC_s: 0.9765, Test AUC_s: 0.8772
+(IID) Best_Test: Epoch:299, Train AUC:0.9849, Val AUC: 0.9766, Test AUC: 0.8772
+(OOD) Current_Test: Epoch:299, Train AUC:0.9849, Val AUC: 0.9766, Test AUC: 0.8772
+ 32%|████████████▊                           | 319/1000 [04:10<06:34,  1.73it/s]Epoch:320, Loss: 1.7043, Time: 0.570
+(IID) Current: Epoch:320, Train AUC :0.9850, Val AUC_s: 0.9765, Test AUC_s: 0.8782
+(IID) Best_Test: Epoch:316, Train AUC:0.9850, Val AUC: 0.9766, Test AUC: 0.8779
+(OOD) Current_Test: Epoch:316, Train AUC:0.9850, Val AUC: 0.9766, Test AUC: 0.8779
+ 34%|█████████████▌                          | 339/1000 [04:22<05:58,  1.84it/s]Epoch:340, Loss: 1.7026, Time: 0.534
+(IID) Current: Epoch:340, Train AUC :0.9852, Val AUC_s: 0.9765, Test AUC_s: 0.8793
+(IID) Best_Test: Epoch:333, Train AUC:0.9852, Val AUC: 0.9766, Test AUC: 0.8791
+(OOD) Current_Test: Epoch:333, Train AUC:0.9852, Val AUC: 0.9766, Test AUC: 0.8791
+ 36%|██████████████▎                         | 359/1000 [04:33<05:45,  1.85it/s]Epoch:360, Loss: 1.6997, Time: 0.506
+(IID) Current: Epoch:360, Train AUC :0.9854, Val AUC_s: 0.9764, Test AUC_s: 0.8798
+(IID) Best_Test: Epoch:333, Train AUC:0.9852, Val AUC: 0.9766, Test AUC: 0.8791
+(OOD) Current_Test: Epoch:333, Train AUC:0.9852, Val AUC: 0.9766, Test AUC: 0.8791
+ 38%|███████████████▏                        | 379/1000 [04:44<05:44,  1.80it/s]Epoch:380, Loss: 1.7017, Time: 0.563
+(IID) Current: Epoch:380, Train AUC :0.9855, Val AUC_s: 0.9766, Test AUC_s: 0.8797
+(IID) Best_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+(OOD) Current_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+ 40%|███████████████▉                        | 399/1000 [04:55<05:23,  1.86it/s]Epoch:400, Loss: 1.6955, Time: 0.597
+(IID) Current: Epoch:400, Train AUC :0.9857, Val AUC_s: 0.9763, Test AUC_s: 0.8809
+(IID) Best_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+(OOD) Current_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+ 42%|████████████████▊                       | 419/1000 [05:06<05:16,  1.84it/s]Epoch:420, Loss: 1.6936, Time: 0.551
+(IID) Current: Epoch:420, Train AUC :0.9857, Val AUC_s: 0.9761, Test AUC_s: 0.8809
+(IID) Best_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+(OOD) Current_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+ 42%|████████████████▉                       | 423/1000 [05:09<07:01,  1.37it/s]
+2024-08-07 16:57:44,014 - INFO: (IID) Last_Train: Epoch:424, Train AUC:0.9857, Val AUC: 0.9761, Test AUC: 0.8809
+2024-08-07 16:57:44,015 - INFO: (IID) Best_Train: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+2024-08-07 16:57:44,015 - INFO: (OOD) Early_Test: Epoch:373, Train AUC:0.9854, Val AUC: 0.9770, Test AUC: 0.8814
+2024-08-07 16:57:44,015 - INFO: running time per every epoch: 0.7313
