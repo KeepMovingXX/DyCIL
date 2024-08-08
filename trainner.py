@@ -65,7 +65,7 @@ class Trainer(object):
                     print(
                         "Epoch:{}, Loss: {:.4f}, Time: {:.3f}".format(epoch, average_epoch_loss, time.time() - t0))
                     print(
-                        f"(IID) Current: Epoch:{epoch}, Train AUC :{average_train_auc:.4f}, Val AUC_s: {average_val_auc:.4f}, Test AUC_s: {average_test_auc:.4f}"
+                        f"(IID) Current: Epoch:{epoch}, Train AUC :{average_train_auc:.4f}, Val AUC: {average_val_auc:.4f}, Test AUC: {average_test_auc:.4f}"
                     )
                     print(
                         f"(IID) Best_Test: Epoch:{test_results[0]}, Train AUC:{max_train_auc:.4f}, Val AUC: {max_auc:.4f}, Test AUC: {max_test_auc:.4f}"
