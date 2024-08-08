@@ -66,7 +66,7 @@ class NC_Motif_Trainer(object):
                         f"Best_metric: Epoch:{best_epoch}, Train AUC:{max_train_acc:.4f}, Val AUC: {max_acc:.4f}, Test AUC: {max_test_acc:.4f}"
                     )
                     print(
-                        f"Every Test: Epoch:{best_epoch}, Test15:{best_test_acc_list[0]:.4f}, Test16: {best_test_acc_list[1]:.4f}, Test17: {best_test_acc_list[2]:.4f}")
+                        f"Every Test: Epoch:{best_epoch}, Test28:{best_test_acc_list[0]:.4f}, Test29: {best_test_acc_list[1]:.4f}, Test30: {best_test_acc_list[2]:.4f}")
 
         epoch_time = (time.time() - t_total0) / (epoch - 1)
         return epoch, average_train_acc, average_val_acc, average_test_acc, best_epoch, max_train_acc, max_acc, max_test_acc, epoch_time, best_test_acc_list
