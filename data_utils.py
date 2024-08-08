@@ -4,8 +4,7 @@ import torch
 def load_data(args):
     dataset = args.dataset
     if dataset == 'collab':
-        # dataroot = os.path.join('./data/',dataset)
-        dataroot = os.path.join('/home/gmz/zxx/DyGIL/data', dataset)
+        dataroot = os.path.join('./data/',dataset)
         processed_datafile = f"{dataroot}/processed2"
         args.testlength = 5
         args.vallength = 1
@@ -16,7 +15,7 @@ def load_data(args):
         args.num_nodes = len(data['x'])
 
     elif dataset == 'Aminer':
-        dataroot = os.path.join('/home/gmz/zxx/DyGIL/data', dataset)
+        dataroot = os.path.join('./data/',dataset)
         processed_datafile = f"{dataroot}/processed_data_128.pt"
         data = torch.load(processed_datafile)
         args.testlength = 3
@@ -27,7 +26,7 @@ def load_data(args):
         args.num_classes = max(data['y']).item() + 1
 
     elif dataset == 'act':
-        dataroot = os.path.join('/home/gmz/zxx/DyGIL/data',dataset, dataset)
+        dataroot = os.path.join('./data/',dataset)
         data = torch.load(dataroot)
         args.testlength = 8
         args.vallength = 2
@@ -37,8 +36,7 @@ def load_data(args):
         args.num_nodes = len(data['x'])
 
     elif dataset == 'dymotif_data':
-        # dataroot = os.path.join('./data/DyMotif-0.4', 'raw', dataset)
-        dataroot = os.path.join('/home/gmz/zxx/DyGIL/data/DyMotif-0.4', 'raw', dataset)
+        dataroot = os.path.join('./data/DyMotif-0.4', 'raw', dataset)
         data = torch.load(dataroot)
         args.testlength = 3
         args.vallength = 3
@@ -48,7 +46,7 @@ def load_data(args):
         args.num_nodes = data['x_list'][-1].shape[0]
 
     elif dataset == 'synthetic':
-        dataroot = os.path.join('/home/gmz/zxx/DyGIL/data', dataset)
+        dataroot = os.path.join('./data/',dataset)
         processed_datafile = f"{dataroot}/processed2"
         if args.P == 0.4:
             data = torch.load(f'{processed_datafile}-sythetic2-{0.4, 0.05, 0.1, 0.0}')
