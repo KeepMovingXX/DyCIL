@@ -26,7 +26,7 @@ def load_data(args):
         args.num_classes = max(data['y']).item() + 1
 
     elif dataset == 'act':
-        dataroot = os.path.join('./data/',dataset)
+        dataroot = os.path.join('./data/',dataset, dataset)
         data = torch.load(dataroot)
         args.testlength = 8
         args.vallength = 2
